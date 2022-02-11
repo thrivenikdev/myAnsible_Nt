@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  -  name: i want ping
+     ping:
+
+  -  name: i want to install webser on ubuntu
+     apt:
+     -  name: apache2
+        status: present 
